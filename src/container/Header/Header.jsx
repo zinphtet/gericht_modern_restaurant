@@ -13,7 +13,7 @@ const Header = () => (
          <p className="header_title">
             The Key To The Fine Dining
          </p>
-         <p className="header_info_text">
+         <p className="header_info_text para">
          Sit Tellus Lobortis Sed Senectus Vivamus Molestie. Condimentum Volutpat Morbi Facilisis Quam Scelerisque Sapien. Et, Penatibus Aliquam Amet Tellus
          </p>
          <button className="btn">Explore Menu</button>

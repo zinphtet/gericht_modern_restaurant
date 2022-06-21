@@ -6,7 +6,7 @@
   --color-golden: #DCCA87;
   --color-black: #0C0C0C;
   --color-gray: #545454;
-  --color-crimson: #F5EFDB;
+  --color-crimson: #f5efdb;
   --color-grey: #AAAAAA;
   --color-white: #FFFFFF;
 
@@ -65,7 +65,7 @@ body{
 .container{
   max-width: 115rem;
   margin: auto;
- padding: 5rem 1.5rem;
+ padding:8rem 1.5rem;
   @media screen and (max-width : 56.25rem){
   padding-inline: 3rem;
   }
@@ -96,4 +96,25 @@ body{
   cursor: pointer;
   align-self: flex-start;
   background-color: var(--color-crimson);
+}
+.para{
+  font-size: 1.8rem;
+  font-weight: 300;
+  color: var(--color-grey);
+}
+.menu_title{
+  font-size: 6rem;
+  font-family: var(--font-base);
+  color: var(--color-golden);
+  font-weight: 600;
+  @media screen and (max-width : 37.5rem){
+    font-size: 5rem;
+  }
+}
+.sub_menu_title{
+  font-size: 4rem;
+  font-family: var(--font-base);
+  color: var(--color-white);
+  font-weight:300;
+  text-align: center;
 }

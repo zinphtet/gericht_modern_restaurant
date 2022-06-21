@@ -1,0 +1,93 @@
+
+.about_us{
+    color: var(--color-white);
+    position: relative;
+    z-index: 2;
+    
+    .g_img{
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%,-50%);
+        max-width: 30rem;
+        z-index: -1;
+        @media screen and (max-width : 56.25rem){
+            max-width: 40rem;
+          }
+    }
+    .knife_img{
+     max-width: 20rem;
+    //   border: 1px solid red;
+      @media screen and (max-width : 56.25rem){
+        max-width: 10rem;
+      }
+      @media screen and (max-width : 37.5rem){
+        max-width: 6rem;
+      }
+      img{
+          width: 100%;
+      }
+    }
+    .about_info{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 4rem;
+        @media screen and (max-width : 56.25rem){
+            flex-direction: column;
+        }
+        .about{
+            display: flex;
+            flex-direction: column;
+            gap: 3rem;
+           align-items: flex-end;
+            .heading_about{
+                p{
+                  font-size: 6rem;
+                  font-family: var(--font-base);
+                  color: var(--color-golden);
+                  @media screen and (max-width : 37.5rem){
+                    font-size: 4rem;
+                  }
+                }
+                img{
+                      width: 5rem;
+                      float: right;
+                }
+               
+            }
+            .para{
+                text-align: right;
+            }
+            .btn_div{
+               
+                .btn{
+                    float: left;
+                    
+                }
+            }
+           
+        }
+        .history{
+            // &>*{
+            //     margin-bottom: 2rem;
+            // }
+            display: flex;
+            flex-direction: column;
+            gap: 3rem;
+            .heading_history{
+                p{
+                  font-size: 6rem;
+                  font-family: var(--font-base);
+                  color: var(--color-golden);
+                  @media screen and (max-width : 37.5rem){
+                    font-size: 4rem;
+                  }
+                }
+                img{
+                      width: 5rem;
+                }
+            }
+        }
+    }
+}

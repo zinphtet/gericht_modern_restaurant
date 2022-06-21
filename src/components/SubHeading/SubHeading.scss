@@ -7,7 +7,17 @@
         font-family: var(--font-base);
         font-size: 3rem;
     }
-    img{
-        width: 3.5rem;
+    .spoon_img{
+        // border: 1px solid red;
+        display: flex;
+        align-items: center;
+       
+        img{
+            width: 3.5rem;
+            // border: 1px solid red;
+            text-align: center;
+        }
+
     }
+   
 }

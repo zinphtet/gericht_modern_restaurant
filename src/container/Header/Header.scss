@@ -24,13 +24,17 @@
          font-size: 8rem;
          font-family: var(--font-base);
          color: var(--color-golden);
+         @media screen and (max-width : 37.5rem){
+            font-size: 6rem;
+          }
       }
-      &_text{
-        font-size: 1.5rem;
-        font-family: var(--font-alt);
-        letter-spacing: .02rem;
-        word-spacing: .2rem;
-      }
+    //   &_text{
+    //     font-size: 1.5rem;
+    //     font-family: var(--font-alt);
+    //     letter-spacing: .02rem;
+    //     word-spacing: .2rem;
+    //     color: var(--color-grey);
+    //   }
    }
 
    &_img{
