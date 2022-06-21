@@ -1,0 +1,99 @@
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Upright:wght@300;400;500;600;700&family=Open+Sans:wght@300;400;500;600;700&display=swap');
+:root {
+  --font-base: 'Cormorant Upright', serif;
+  --font-alt: 'Open Sans', sans-serif;
+  
+  --color-golden: #DCCA87;
+  --color-black: #0C0C0C;
+  --color-gray: #545454;
+  --color-crimson: #F5EFDB;
+  --color-grey: #AAAAAA;
+  --color-white: #FFFFFF;
+
+  --tablet-land : 56.25rem;
+--tablet-port : 37.5rem;
+--phone : 25rem;
+
+}
+$tablet-land : 56.25rem;
+$tablet-port : 37.5rem;
+$phone : 25rem;
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  scroll-behavior: smooth;
+}
+html{
+  font-size: 62.5%;
+  line-height: 1.5;
+  @media screen and (max-width : $tablet-land){
+    font-size: 59.375%;
+  }
+  @media screen and (max-width : $tablet-port){
+    font-size: 56.25%;
+  }
+  @media screen and (max-width : $phone){
+    font-size: 54.6875%;
+  }
+}
+a{
+  text-decoration: none;
+
+}
+li{
+  list-style-type: none;
+}
+img{
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+body{
+  position: relative;
+  background-color: var(--color-black);
+  color: var(--color-white);
+}
+@mixin dflex($dir,$layout){
+  display: flex;
+  align-items: center;
+  flex-direction: $dir;
+  justify-content: $layout;
+}
+
+.container{
+  max-width: 115rem;
+  margin: auto;
+ padding: 5rem 1.5rem;
+  @media screen and (max-width : 56.25rem){
+  padding-inline: 3rem;
+  }
+}
+.bg_black{
+  background-color: var(--color-black);
+}
+.w_100{
+  width: 100%;
+}
+.app__bg {
+  background: url('./assets/bg.png');
+  background-position: center;
+  background-size: cover;
+  background-repeat: repeat;
+  background-attachment: fixed;
+}
+.nav_link a{
+  font-size: 1.7rem;
+  color: var(--color-white);
+ 
+  font-weight: 300;
+}
+.btn{
+  padding: 1.2rem 2.7rem;
+  border: none;
+  font-family: var(--font-base);
+  cursor: pointer;
+  align-self: flex-start;
+  background-color: var(--color-crimson);
+}

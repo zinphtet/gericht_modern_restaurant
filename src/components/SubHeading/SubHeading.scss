@@ -1,0 +1,13 @@
+
+
+.subheading{
+    width: max-content;
+    // border: 1px solid red;
+    &_title{
+        font-family: var(--font-base);
+        font-size: 3rem;
+    }
+    img{
+        width: 3.5rem;
+    }
+}
