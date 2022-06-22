@@ -1,11 +1,12 @@
 import React from 'react';
+import SubHeading from '../../components/SubHeading/SubHeading';
 
-import './Gallery.css';
+import './Gallery.scss';
 
 const Gallery = () => (
-  <div>
-    Gallery
-  </div>
+ <div className="gallery container">
+     <SubHeading title='Instagram'/>
+ </div>
 );
 
 export default Gallery;

@@ -3,7 +3,7 @@ import images from '../../constants/images';
 import './AboutUs.scss';
 const {G,spoon,knife} = images
 const AboutUs = () => (
-  <div className="app_wrapper app__bg">
+  <div className="app_wrapper app__bg " id='about'>
     <div className="about_us container ">
      <div className="g_img">
       <img src={G} alt="G image" />

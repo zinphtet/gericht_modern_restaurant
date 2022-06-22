@@ -6,6 +6,13 @@ import { useState } from 'react';
 const {gericht } = images
 const Navbar = () => {
    const [showMenu , setShowMenu] = useState(false)
+   
+   if(showMenu ){
+    document.body.style.overflow = 'hidden'
+   }else{
+    document.body.style.overflow = 'auto'
+   }
+
   return <div className="navbar w_100 bg_black">
     <div className="navbrand">
       <div className='navbrand_div'>

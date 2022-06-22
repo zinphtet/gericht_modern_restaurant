@@ -8,7 +8,7 @@ import data from '../../constants/data';
 const {wines , cocktails} = data
 const {menu} = images
 const SpecialMenu = () => (
-  <div className='special_menu container'>
+  <div className='special_menu container' id='menu'>
     <SubHeading title='Menu That Fit Your Plate ' imgPos ='center'/>
     <p className="menu_title">Today's Special</p>
     <div className="menus">

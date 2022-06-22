@@ -1,11 +1,19 @@
 import React from 'react';
+import MealVideo from '../../assets/meal.mp4'
+import './Intro.scss';
 
-import './Intro.css';
+const Intro = () => {
+  
 
-const Intro = () => (
-  <div>
-    Intro
-  </div>
-);
+  return(
+<div className="intro container" >
+ 
+   <div className="intro_video">
+    <video width="100%" height="100vh" controls>
+        <source src={MealVideo} />
+    </video>       
+   </div>
+</div>
+)};
 
 export default Intro;

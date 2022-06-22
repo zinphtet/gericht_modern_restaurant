@@ -1,0 +1,17 @@
+.laurel_item{
+    display: grid;
+    grid-template-columns: 6rem 1fr;
+    // border: 1px solid red;
+    grid-gap: 2rem;
+    .laurel_img{
+        width: 6rem;
+        align-self: flex-start;
+    }
+    .laurel_item_info{
+        .laurel_item_title{
+            font-size: 2.5rem;
+            font-family: var(--font-base);
+            color: var(--color-golden);
+        }
+    }
+}

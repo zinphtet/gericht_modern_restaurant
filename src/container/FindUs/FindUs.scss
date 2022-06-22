@@ -1,0 +1,54 @@
+
+.container{
+    display: flex;
+    align-items: center;
+    gap: 4rem;
+    @media screen and (max-width : 56.25rem){
+        flex-direction: column;
+    }
+    .findus_info{
+        width: 100%;
+        // border: 2px solid red;
+        flex: 1;
+      display: grid;
+      grid-gap: 2rem;
+        .findus_text{
+            font-size: 1.8rem;
+            font-style: var(--font-alt);
+            color: var(--color-white);
+            font-weight: 300;
+            letter-spacing: .02rem;
+        }
+        .opening_hours{
+            font-size: 3rem;
+            font-family: var(--font-base);
+            color: var(--color-golden);
+            font-weight: 500;
+            letter-spacing: .02rem;
+        }
+        .hours{
+            display: grid;
+            grid-gap: 1rem;
+            &_open{
+                font-size: 2.2rem;
+                font-family: var(--font-base);
+            }
+        }
+        .btn{
+            align-self: flex-start;
+        }
+    }
+    .findus_img{
+        width: 100%;
+        // border: 2px solid red;
+        flex: 1;
+        display: flex;
+        &_wrapper{
+            margin: auto;
+            // @media screen and (max-width : 56.25rem){
+            //     margin-left: 0;
+            // }
+            max-width: 45rem;
+        }
+    }
+}
