@@ -17,7 +17,7 @@ const Laurels = () => (
           
 
            {
-            awards.map(({...props})=><LaurelItem key={Math.random()} {...props}/>)
+            awards.map(({...props},i)=><LaurelItem key={i} {...props}/>)
            }
         </div>
       </div>

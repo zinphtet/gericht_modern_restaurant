@@ -15,8 +15,8 @@ const SpecialMenu = () => (
       <div className="wine">
         <p className="sub_menu_title">Wine & Beer</p>
         {
-        wines.map(({...pros})=>{
-          return <MenuItem {...pros} key={Math.random()}/>
+        wines.map(({...pros},i)=>{
+          return <MenuItem {...pros} key={i}/>
         })
         }
       </div>
