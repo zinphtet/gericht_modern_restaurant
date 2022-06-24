@@ -2,9 +2,9 @@ import React from 'react';
 import SubHeading from '../../components/SubHeading/SubHeading';
 import images from '../../constants/images';
 import './SpecialMenu.scss';
-import MenuItem from '../../components/MenuItem/MenuItem';
+import compoments from  '../../components/index.js'
 import data from '../../constants/data';
-
+const {MenuItem} = compoments
 const {wines , cocktails} = data
 const {menu} = images
 const SpecialMenu = () => (
