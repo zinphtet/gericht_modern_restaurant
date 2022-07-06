@@ -33,6 +33,7 @@
             justify-content: center;
             @media screen and (max-width : 37.5rem){
                 flex-direction: column;
+                margin-bottom: 2rem;
             }
             input{
             //   max-width: 60rem;
