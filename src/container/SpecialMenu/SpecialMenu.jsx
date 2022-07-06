@@ -2,11 +2,28 @@ import React from 'react';
 import SubHeading from '../../components/SubHeading/SubHeading';
 import images from '../../constants/images';
 import './SpecialMenu.scss';
-import compoments from  '../../components/index.js'
+// import compoments from  '../../components/index.js'
 import data from '../../constants/data';
-const {MenuItem} = compoments
+// const {MenuItem} = compoments
 const {wines , cocktails} = data
 const {menu} = images
+
+const MenuItem = ({title,price,tag}) => (
+  <div className="menu_item">
+    <div className="menu_item_title">
+      <p className="item_title">
+           {title}
+      </p>
+      <div className="item_price">
+        <div className="price_line"></div>
+        <p className="price">{price}</p>
+      </div>
+    </div>
+    <div className="menu_item_tag">
+       {tag}
+    </div>
+  </div>
+);
 const SpecialMenu = () => (
   <div className='special_menu container' id='menu'>
     <SubHeading title='Menu That Fit Your Plate ' imgPos ='center'/>
